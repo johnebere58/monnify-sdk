@@ -445,3 +445,13 @@
 {"ts":1712570269352,"action":"FILE_OPENED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/customview/MonnifyDropDownView.kt","tags":{"FILE_LINE_OF_CODE":"141"}}
 {"ts":1712570271065,"action":"FILE_CLOSED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/customview/MonnifyDropDownView.kt","tags":{"FILE_LINE_OF_CODE":"141"}}
 {"ts":1712570271065,"action":"FILE_OPENED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/customview/MonnifyLetterSpacingTextView.kt","tags":{"FILE_LINE_OF_CODE":"67"}}
+{"ts":1712570479221,"action":"IDE_DEACTIVATED"}
+{"ts":1712570501230,"action":"IDE_ACTIVATED"}
+{"ts":1712570502853,"action":"IDE_DEACTIVATED"}
+{"ts":1712570527324,"action":"IDE_ACTIVATED"}
+{"ts":1712570665848,"action":"IDE_DEACTIVATED"}
+{"ts":1712570697741,"action":"IDE_ACTIVATED"}
+{"ts":1712570896201,"action":"IDE_DEACTIVATED"}
+{"ts":1712572575205,"action":"IDE_ACTIVATED"}
+{"ts":1712572668241,"action":"FILE_CLOSED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/customview/MonnifyLetterSpacingTextView.kt","tags":{"FILE_LINE_OF_CODE":"67"}}
+{"ts":1712572668241,"action":"FILE_OPENED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/module/view/fragment/BankPaymentFragment.kt","tags":{"FILE_LINE_OF_CODE":"68"}}

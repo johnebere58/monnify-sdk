@@ -6,12 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.teamapt.monnify.pos.util.ViewModelConstructor
-import com.teamapt.monnify.pos.util.ViewModelFactory
+//import com.monnify.monnify_payment_sdk.util.ViewModelConstructor
+import com.monnify.monnify_payment_sdk.util.ViewModelFactory
 import com.monnify.monnify_payment_sdk.R
 import com.monnify.monnify_payment_sdk.module.vm.BankPaymentViewModel
 import com.monnify.monnify_payment_sdk.util.BanksProvider
 import com.monnify.monnify_payment_sdk.util.Constants
+import com.monnify.monnify_payment_sdk.util.ViewModelConstructor
 import java.math.BigDecimal
 
 class BankPaymentFragment : BaseFragment() {

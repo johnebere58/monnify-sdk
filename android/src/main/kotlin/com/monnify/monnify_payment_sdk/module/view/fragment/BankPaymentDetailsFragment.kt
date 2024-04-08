@@ -11,8 +11,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.MaterialDatePicker
-import com.teamapt.monnify.pos.util.ViewModelConstructor
-import com.teamapt.monnify.pos.util.ViewModelFactory
+import com.monnify.monnify_payment_sdk.util.ViewModelConstructor
+import com.monnify.monnify_payment_sdk.util.ViewModelFactory
 import com.monnify.monnify_payment_sdk.R
 import com.monnify.monnify_payment_sdk.customview.MonnifyDropDownView
 import com.monnify.monnify_payment_sdk.customview.MonnifyEditText
