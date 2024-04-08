@@ -4,5 +4,5 @@ import com.teamapt.monnify.sdk.rest.data.response.InitializeTransferPaymentRespo
 import java.math.BigDecimal
 
 typealias Amount = BigDecimal
-typealias SDKResource = com.teamapt.monnify.sdk.R
+typealias SDKResource = com.monnify.monnify_payment_sdk.R
 typealias BankTransferDetails = InitializeTransferPaymentResponse

@@ -372,3 +372,7 @@
 {"ts":1712536774133,"action":"FILE_OPENED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/MonnifyPaymentSdkPlugin.kt","tags":{"FILE_LINE_OF_CODE":"250"}}
 {"ts":1712536787144,"action":"FILE_CLOSED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/MonnifyPaymentSdkPlugin.kt","tags":{"FILE_LINE_OF_CODE":"250"}}
 {"ts":1712536787144,"action":"FILE_OPENED","file":"/src/main/java/com/teamapt/monnify/sdk/customview/MonnifyBrandContainer.kt","tags":{"FILE_LINE_OF_CODE":"16"}}
+{"ts":1712536855152,"action":"FILE_CLOSED","file":"/src/main/java/com/teamapt/monnify/sdk/customview/MonnifyBrandContainer.kt","tags":{"FILE_LINE_OF_CODE":"16"}}
+{"ts":1712536855152,"action":"FILE_OPENED","file":"/src/main/res/layout/plugin_monnify_brand_text_view.xml","tags":{"FILE_LINE_OF_CODE":"15"}}
+{"ts":1712536907760,"action":"IDE_DEACTIVATED"}
+{"ts":1712536923932,"action":"IDE_ACTIVATED"}
