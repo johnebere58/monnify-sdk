@@ -455,3 +455,7 @@
 {"ts":1712572575205,"action":"IDE_ACTIVATED"}
 {"ts":1712572668241,"action":"FILE_CLOSED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/customview/MonnifyLetterSpacingTextView.kt","tags":{"FILE_LINE_OF_CODE":"67"}}
 {"ts":1712572668241,"action":"FILE_OPENED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/module/view/fragment/BankPaymentFragment.kt","tags":{"FILE_LINE_OF_CODE":"68"}}
+{"ts":1712573042520,"action":"FILE_CLOSED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/module/view/fragment/BankPaymentFragment.kt","tags":{"FILE_LINE_OF_CODE":"69"}}
+{"ts":1712573042520,"action":"FILE_OPENED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/MonnifyPaymentSdkPlugin.kt","tags":{"FILE_LINE_OF_CODE":"249"}}
+{"ts":1712573162639,"action":"IDE_DEACTIVATED"}
+{"ts":1712573200988,"action":"IDE_ACTIVATED"}

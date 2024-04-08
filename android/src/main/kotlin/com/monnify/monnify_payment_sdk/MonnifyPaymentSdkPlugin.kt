@@ -52,7 +52,7 @@ class MonnifyPaymentSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
         channel.setMethodCallHandler(this)
     }
 
-    override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
+    override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result<Any>) {
         when (call.method) {
 
             "initialize" -> {
@@ -69,7 +69,7 @@ class MonnifyPaymentSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
         }
     }
 
-    private fun initialize(call: MethodCall, result: Result) {
+    private fun initialize(call: MethodCall, result: Result<Any>) {
 
         if (call.arguments == null || call.arguments !is Map<*, *>) {
             result.error(ERROR_CODE_SDK_INITIALIZATION, "Invalid input(s)", null)
@@ -92,7 +92,7 @@ class MonnifyPaymentSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
         result.success(true)
     }
 
-    private fun initializePayment(call: MethodCall, result: Result) {
+    private fun initializePayment(call: MethodCall, result: Result<Any>) {
 
         if (call.arguments == null || call.arguments !is Map<*, *>) {
             result.error(ERROR_CODE_PAYMENT_INITIALIZATION, "Invalid input(s)", null)
@@ -197,9 +197,9 @@ class MonnifyPaymentSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
 
     class ResultListener : PluginRegistry.ActivityResultListener {
 
-        private lateinit var result: Result
+        private lateinit var result: Any
 
-        fun setResultCallback(result: Result) {
+        fun setResultCallback(result: Result<Any>) {
             this.result = result
         }
 
