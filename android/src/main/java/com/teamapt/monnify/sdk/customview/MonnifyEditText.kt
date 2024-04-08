@@ -13,7 +13,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.appcompat.widget.LinearLayoutCompat
 import com.google.android.material.textfield.TextInputLayout
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 
 class MonnifyEditText @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null

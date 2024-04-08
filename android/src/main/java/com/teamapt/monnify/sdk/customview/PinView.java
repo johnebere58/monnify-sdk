@@ -51,7 +51,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.inputmethod.EditorInfo;
 
-import com.teamapt.monnify.sdk.R;
+import com.monnify.monnify_payment_sdk.R;
 
 
 /**

@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.gson.Gson
 import com.teamapt.monnify.pos.util.ViewModelConstructor
 import com.teamapt.monnify.pos.util.ViewModelFactory
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.customview.MonnifyDropDownView
 import com.teamapt.monnify.sdk.module.vm.UssdPaymentViewModel
 import com.teamapt.monnify.sdk.rest.data.response.Bank

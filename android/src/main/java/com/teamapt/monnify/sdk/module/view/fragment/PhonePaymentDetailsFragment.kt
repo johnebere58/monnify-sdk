@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.customview.MonnifyEditText
 import com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
 import com.teamapt.monnify.sdk.module.vm.PhonePaymentViewModel

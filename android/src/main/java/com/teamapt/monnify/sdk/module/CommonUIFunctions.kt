@@ -1,7 +1,7 @@
 package com.teamapt.monnify.sdk.module
 
 import androidx.annotation.StringRes
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 
 interface CommonUIFunctions {
     fun showToastMessage(message: String = "")

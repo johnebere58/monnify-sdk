@@ -2,7 +2,7 @@ package com.teamapt.monnify.sdk.module.vm
 
 import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.Status
 import com.teamapt.monnify.sdk.data.Event
 import com.teamapt.monnify.sdk.data.SingleLiveEvent

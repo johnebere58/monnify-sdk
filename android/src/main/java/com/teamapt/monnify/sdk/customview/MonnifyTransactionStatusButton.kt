@@ -4,7 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.LinearLayoutCompat
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.data.model.PaymentMethod
 import com.teamapt.monnify.sdk.util.Logger
 

@@ -16,7 +16,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.toBitmap
 import androidx.core.view.ViewCompat
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.util.Logger
 import kotlin.math.roundToInt
 

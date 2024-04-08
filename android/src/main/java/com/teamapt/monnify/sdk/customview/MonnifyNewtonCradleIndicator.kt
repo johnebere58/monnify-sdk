@@ -12,7 +12,7 @@ import android.view.View
 import android.view.animation.LinearInterpolator
 import androidx.core.content.ContextCompat
 import com.google.android.material.math.MathUtils
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 
 class MonnifyNewtonCradleIndicator @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0

@@ -11,7 +11,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.lifecycle.ViewModelProvider
 import com.teamapt.monnify.sdk.Monnify
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.Status
 import com.teamapt.monnify.sdk.customview.MonnifyTransactionStatusButton
 import com.teamapt.monnify.sdk.data.model.PaymentMethod

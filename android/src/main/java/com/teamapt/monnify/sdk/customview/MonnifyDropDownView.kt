@@ -7,7 +7,7 @@ import android.widget.AdapterView
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.adapter.MonnifyDropDownAdapter
 
 class MonnifyDropDownView<T> @JvmOverloads constructor(

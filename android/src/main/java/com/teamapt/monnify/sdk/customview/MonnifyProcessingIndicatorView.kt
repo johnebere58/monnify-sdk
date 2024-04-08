@@ -10,7 +10,7 @@ import android.view.animation.Animation
 import android.view.animation.LinearInterpolator
 import android.view.animation.RotateAnimation
 import androidx.core.content.ContextCompat
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 
 class MonnifyProcessingIndicatorView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0

@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.data.Event
 import com.teamapt.monnify.sdk.data.SingleLiveEvent
 import com.teamapt.monnify.sdk.data.model.PaymentMethod

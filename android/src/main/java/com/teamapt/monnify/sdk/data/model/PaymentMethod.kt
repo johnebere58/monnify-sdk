@@ -3,7 +3,7 @@ package com.teamapt.monnify.sdk.data.model
 import android.os.Parcelable
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

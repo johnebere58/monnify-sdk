@@ -21,7 +21,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.teamapt.monnify.pos.util.ViewModelConstructor
 import com.teamapt.monnify.pos.util.ViewModelFactory
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.customview.MonnifyDropDownView
 import com.teamapt.monnify.sdk.customview.MonnifyProgressBar
 import com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton

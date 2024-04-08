@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.setPadding
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 
 class MonnifyDropDownAdapter<T>(context: Context, private val resource: Int, private val view: Int, objects: MutableList<T>) :
     ArrayAdapter<T>(context, resource, objects) {

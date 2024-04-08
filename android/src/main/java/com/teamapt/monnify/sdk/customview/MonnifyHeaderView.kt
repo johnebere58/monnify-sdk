@@ -19,7 +19,7 @@ import androidx.core.graphics.contains
 import androidx.core.graphics.drawable.toBitmap
 import androidx.core.view.ViewCompat
 import com.squareup.picasso.Picasso
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.data.RoundedImageTransform
 import com.teamapt.monnify.sdk.util.Logger
 import kotlinx.coroutines.*

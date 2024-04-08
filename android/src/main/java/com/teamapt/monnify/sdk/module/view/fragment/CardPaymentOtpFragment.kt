@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.lifecycle.ViewModelProvider
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.customview.MonnifyEditText
 import com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
 import com.teamapt.monnify.sdk.module.vm.CardPaymentViewModel

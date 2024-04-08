@@ -11,7 +11,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.IntegerRes
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.customview.MonnifyErrorTextView
 import com.teamapt.monnify.sdk.customview.MonnifyPaymentMethodHeaderView
 import com.teamapt.monnify.sdk.module.IAppNavigator

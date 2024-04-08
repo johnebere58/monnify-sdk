@@ -18,7 +18,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.teamapt.monnify.pos.util.ViewModelConstructor
 import com.teamapt.monnify.pos.util.ViewModelFactory
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.customview.MonnifyLetterSpacingTextView
 import com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
 import com.teamapt.monnify.sdk.module.vm.UssdPaymentViewModel

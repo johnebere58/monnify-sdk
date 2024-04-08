@@ -9,7 +9,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.marginStart
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 
 class MonnifyPaymentMethodHeaderView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null

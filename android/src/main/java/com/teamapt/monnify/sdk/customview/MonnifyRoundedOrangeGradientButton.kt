@@ -6,7 +6,7 @@ import android.view.KeyEvent
 import android.view.MotionEvent
 import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 
 class MonnifyRoundedOrangeGradientButton @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null

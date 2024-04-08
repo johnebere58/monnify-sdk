@@ -12,7 +12,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
 import androidx.lifecycle.ViewModelProvider
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.customview.TouchableWebView
 import com.teamapt.monnify.sdk.data.model.CardChargeProvider
 import com.teamapt.monnify.sdk.module.vm.CardPaymentViewModel

@@ -6,7 +6,7 @@ import android.text.SpannableString
 import android.text.style.ScaleXSpan
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 
 class MonnifyLetterSpacingTextView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null

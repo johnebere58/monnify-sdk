@@ -362,3 +362,13 @@
 {"ts":1712536258934,"action":"FILE_OPENED","file":"/build.gradle","tags":{"FILE_LINE_OF_CODE":"154"}}
 {"ts":1712536329259,"action":"FILE_CLOSED","file":"/build.gradle","tags":{"FILE_LINE_OF_CODE":"155"}}
 {"ts":1712536329259,"action":"FILE_OPENED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/MonnifyPaymentSdkPlugin.kt","tags":{"FILE_LINE_OF_CODE":"250"}}
+{"ts":1712536409686,"action":"IDE_DEACTIVATED"}
+{"ts":1712536409688,"action":"IDE_ACTIVATED"}
+{"ts":1712536755413,"action":"IDE_DEACTIVATED"}
+{"ts":1712536755415,"action":"IDE_ACTIVATED"}
+{"ts":1712536765236,"action":"FILE_CLOSED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/MonnifyPaymentSdkPlugin.kt","tags":{"FILE_LINE_OF_CODE":"250"}}
+{"ts":1712536765236,"action":"FILE_OPENED","file":"/build.gradle","tags":{"FILE_LINE_OF_CODE":"155"}}
+{"ts":1712536774133,"action":"FILE_CLOSED","file":"/build.gradle","tags":{"FILE_LINE_OF_CODE":"155"}}
+{"ts":1712536774133,"action":"FILE_OPENED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/MonnifyPaymentSdkPlugin.kt","tags":{"FILE_LINE_OF_CODE":"250"}}
+{"ts":1712536787144,"action":"FILE_CLOSED","file":"/src/main/kotlin/com/monnify/monnify_payment_sdk/MonnifyPaymentSdkPlugin.kt","tags":{"FILE_LINE_OF_CODE":"250"}}
+{"ts":1712536787144,"action":"FILE_OPENED","file":"/src/main/java/com/teamapt/monnify/sdk/customview/MonnifyBrandContainer.kt","tags":{"FILE_LINE_OF_CODE":"16"}}

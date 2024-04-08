@@ -13,7 +13,7 @@ import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.teamapt.monnify.pos.util.ViewModelConstructor
 import com.teamapt.monnify.pos.util.ViewModelFactory
-import com.teamapt.monnify.sdk.R
+import com.monnify.monnify_payment_sdk.R
 import com.teamapt.monnify.sdk.customview.MonnifyDropDownView
 import com.teamapt.monnify.sdk.customview.MonnifyEditText
 import com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
