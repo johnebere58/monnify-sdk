@@ -8,7 +8,7 @@
 
     <application android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
-            android:name=".module.view.activity.SdkActivity"
+            android:name="com.teamapt.monnify.sdk.module.view.activity.SdkActivity"
             android:screenOrientation="userPortrait"
             android:theme="@style/SdkTheme">
 
