@@ -1,0 +1,2 @@
+rootProject.name = 'monnify_payment_sdk'
+include(":monisdk")

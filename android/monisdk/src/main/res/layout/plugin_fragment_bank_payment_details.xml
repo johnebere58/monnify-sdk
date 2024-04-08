@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bg_payment_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen24dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen24dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyErrorTextView
+            android:id="@+id/monnifyErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen16dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Monnify.TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/provide_the_following_details"
+            app:fontFamily="@font/inter_bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/accountInformationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyDropDownView
+                android:id="@+id/banksDropDownView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyEditText
+                android:id="@+id/accountNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:monnifyEditTextHintText="@string/account_number"
+                app:monnifyEditTextLabelText="@string/account_number"
+                app:monnifyEditTextMaxLength="10" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/additionalInformationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyEditText
+                android:id="@+id/bvnEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:monnifyEditTextHintText="@string/enter_bvn"
+                app:monnifyEditTextLabelText="@string/bvn"
+                app:monnifyEditTextMaxLength="11" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyEditText
+                android:id="@+id/dateOfBirthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:monnifyEditTextClickable="true"
+                app:monnifyEditTextIcon="@drawable/ic_chevron_down"
+                app:monnifyEditTextLabelText="@string/date_of_birth" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen8dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/customerNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_customer_found"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dimen8dp"
+            android:paddingVertical="@dimen/dimen8dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen16dp"
+                android:layout_height="@dimen/dimen16dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_check_green" />
+
+            <Space
+                android:layout_width="@dimen/dimen8dp"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/customerNameTextView"
+                style="@style/Monnify.TextAppearance.CustomerName.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                tools:text="James Mackwell Kelly" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen20dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verify_account"
+            app:monnifyButtonState="disabled" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goBackButton"
+            style="@style/Monnify.TextAppearance.TextButton.GoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_text"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dimen8dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/go_back"
+            android:textAlignment="center"
+            android:textStyle="normal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:layout_weight="1" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+group 'com.monnify.monnify_payment_sdk'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.9.23'
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+//        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5'
+        // classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:3.0.1'
+        classpath 'com.github.kezong:fat-aar:1.3.6'
+
+//        classpath "gradle.plugin.com.stehno.gradle:dependency-checker:0.2.3"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+
+    }
+
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 34
+    namespace "com.monnify.monnify_payment_sdk"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        minSdkVersion 24
+    }
+    buildToolsVersion '34.0.0'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(":monisdk")
+//    implementation 'com.monnify.android-sdk:monnify-android-sdk:1.1.7'
+
+}
+

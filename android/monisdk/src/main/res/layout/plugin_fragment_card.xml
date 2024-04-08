@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/monnifyBackground"
+    android:orientation="vertical">
+
+    <com.teamapt.monnify.sdk.customview.MonnifyPaymentMethodHeaderView
+        android:id="@+id/monnifyPaymentMethodHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:paymentMethodIcon="@drawable/ic_pay_with_card"
+        app:paymentMethodTitle="@string/pay_with_card" />
+
+    <FrameLayout
+        android:id="@+id/childFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

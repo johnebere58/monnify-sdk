@@ -1,0 +1,16 @@
+{
+  "requestSuccessful": true,
+  "responseMessage": "success",
+  "responseCode": "0",
+  "responseBody": {
+    "transactionReference": "MNFY|20190827021337|000071",
+    "paymentReference": "63648dcgkn274i",
+    "merchantName": "Soloz Group",
+    "apiKey": "MK_TEST_78UFLLWQXZ",
+    "enabledPaymentMethod": [
+      "ACCOUNT_TRANSFER",
+      "CARD"
+    ],
+    "checkoutUrl": "http://monnifysdk.playground.teamapt.com/checkout/MNFY|20190827021337|000071"
+  }
+}

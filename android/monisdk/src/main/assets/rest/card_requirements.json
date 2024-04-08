@@ -1,0 +1,11 @@
+{
+  "requestSuccessful": true,
+  "responseMessage": "success",
+  "responseCode": "0",
+  "responseBody": {
+    "requirePin": false,
+    "totalAmountPayable": 5635,
+    "amount": 5000,
+    "transactionReference": "MNFY|20190819102906|000001"
+  }
+}

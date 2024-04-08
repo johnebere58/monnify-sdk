@@ -1,0 +1,434 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="SdkTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/monnifyActivityBackground</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:textColor">@color/monnifyBlack</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="SmallText">
+        <item name="android:textColor">@color/monnifyBlack</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="LightTextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- reference our hint & error styles -->
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="android:textColor">@color/inputTextColorBlack</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColorHint">@color/monnifyInputHintColor</item>
+        <item name="boxBackgroundColor">#00000000</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColorHint">@color/monnifyInputHintColor</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/monnifyRedColor</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/bg_primary_button</item>
+        <item name="android:radius">4dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/com_monnify_sdk_button_text_color</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:textAppearance">?buttonStyle</item>
+    </style>
+
+    <style name="TooltipTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/regular_text_size</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PinWidget.PinView" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--  Styles  -->
+
+
+    <style name="Monnify.LightTextInputLayoutAppearance" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- reference our hint & error styles -->
+        <item name="hintTextAppearance">@style/Monnify.HintText</item>
+        <item name="hintTextColor">@color/monnifyInputHintColor</item>
+        <item name="boxBackgroundColor">#00000000</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxStrokeErrorColor">#00000000</item>
+        <item name="boxStrokeColor">#00000000</item>
+    </style>
+
+    <style name="Monnify.TextInputEditText" parent="ThemeOverlay.Material3.TextInputEditText">
+
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">23</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">number|textNoSuggestions</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="hintTextAppearance">@style/Monnify.HintText</item>
+        <item name="android:textAppearance">@style/Monnify.InputText</item>
+
+    </style>
+
+    <style name="Monnify.HintText" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColorHint">@color/monnifyInputHintColor</item>
+        <item name="android:textSize">@dimen/dimen13sp</item>
+        <item name="fontWeight">400</item>
+        <item name="lineHeight">16.42dp</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_light</item>
+    </style>
+
+    <style name="Monnify.InputText" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColorHint">@color/monnifyInputTextColorBlack</item>
+        <item name="android:textSize">@dimen/dimen15sp</item>
+        <item name="fontWeight">700</item>
+        <item name="lineHeight">21.97dp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+
+    <!-- Plugin Button Style -->
+
+    <style name="Monnify.Button.Primary" parent="SdkTheme">
+
+        <item name="android:background">@drawable/bg_button_primary_gradient</item>
+        <item name="android:radius">4dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/monnifyPrimaryButtonText</item>
+        <item name="android:textSize">@dimen/dimen15sp</item>
+        <item name="lineHeight">18.15dp</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?buttonStyle</item>
+    </style>
+
+    <!-- Plugin text style -->
+
+    <style name="Monnify.TextAppearance.Loading" parent="SdkTheme">
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="android:textColor">@color/monnifyLoadingText</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:fontWeight">400</item>
+        <item name="fontWeight">700</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.CancelButton" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
+        <item name="android:textColor">@color/monnifySurfaceText</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.CustomerName" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
+        <item name="android:textColor">@color/monnifySurfaceText</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Amount" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen32sp</item>
+        <item name="android:textColor">@color/monnifySurfaceText</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Amount.Label" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/monnifyAmountLabel</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Fee" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/monnifySurfaceText</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Fee.Label" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/monnifySurfaceText</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.PoweredBy" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen13sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/monnifyNeutralBlackTrans40</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Title" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen13sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/monnifyTitleText</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="fontWeight">500</item>
+        <item name="lineHeight">@dimen/dimen19dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.SelectPaymentMethod" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen10sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/monnifyTitleTextTrans70</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="fontWeight">700</item>
+        <item name="lineHeight">@dimen/dimen14dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.PaymentMethodHeader" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen13sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/monnifyTitleText</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="fontWeight">700</item>
+        <item name="lineHeight">@dimen/dimen19dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.PaymentMethodHeader.Button" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen14sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/monnifyRoyalBlue</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="fontWeight">500</item>
+        <item name="lineHeight">@dimen/dimen19dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Title.TransferCaption" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/monnifyBackgroundText</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="lineHeight">19dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Details" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen11sp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/monnifyTitleText</item>
+        <item name="lineHeight">16.11dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.ItemTile.Title" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen10sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/monnifyInfoTitleText</item>
+        <item name="lineHeight">12.11dp</item>
+        <item name="android:letterSpacing">0.0126</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.ItemTile.AccountNumber" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen24sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/monnifyRoyalBlue</item>
+        <item name="android:lineHeight">29.05dp</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.ItemTile.BankName" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/monnifyTransferInfoDetailsText</item>
+        <item name="lineHeight">12.1dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.ItemTile.Details" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/monnifyTransferInfoDetailsText</item>
+        <item name="lineHeight">17.58dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.TextButton" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/monnifyRoyalBlue</item>
+        <item name="lineHeight">17.68dp</item>
+        <item name="android:letterSpacing">0.0009</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.TextButton.GoBack" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen14sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">@color/monnifyNeutralBlackTrans40</item>
+        <item name="lineHeight">17.68dp</item>
+        <item name="android:letterSpacing">0.0009</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Input.Dropdown" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textColor">@color/monnifyBackgroundText</item>
+        <item name="lineHeight">15.73dp</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="fontWeight">700</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Input.Dropdown.Selected" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen15sp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/monnifyInputTextColorBlack</item>
+        <item name="lineHeight">18.94dp</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Input.Dropdown.Label" parent="SdkTheme">
+
+        <item name="android:textSize">@dimen/dimen14sp</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/monnifyNeutralBlackTrans40</item>
+        <item name="lineHeight">14dp</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.USSDCode" parent="SdkTheme">
+
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="fontWeight">700</item>
+        <item name="android:textSize">@dimen/dimen18sp</item>
+        <item name="android:textColor">#1A0C2F</item>
+        <item name="lineHeight">25.25dp</item>
+        <item name="android:letterSpacing">0.1026</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.USSDCode.Title" parent="SdkTheme">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="fontWeight">700</item>
+        <item name="android:letterSpacing">0.0126</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/monnifyNeutralBlackTrans50</item>
+        <item name="android:textSize">@dimen/dimen13sp</item>
+        <item name="lineHeight">@dimen/dimen18dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.USSDCode.Subtext" parent="SdkTheme">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/monnifyIconGrey</item>
+        <item name="android:textSize">@dimen/dimen11sp</item>
+        <item name="lineHeight">@dimen/dimen18dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.ErrorText" parent="SdkTheme">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/monnifyRed</item>
+        <item name="android:textSize">@dimen/dimen11sp</item>
+        <item name="lineHeight">13.89dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.WarningText" parent="SdkTheme">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/monnifyRoyalGold</item>
+        <item name="android:textSize">@dimen/dimen11sp</item>
+        <item name="lineHeight">13.89dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.CustomerName.Title" parent="SdkTheme">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="fontWeight">500</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/monnifyStateSuccess</item>
+        <item name="android:textSize">@dimen/dimen11sp</item>
+        <item name="lineHeight">13.89dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.Test" parent="SdkTheme">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="fontWeight">700</item>
+        <item name="android:letterSpacing">0.0009</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/monnifyTestIndicatorText</item>
+        <item name="android:textSize">@dimen/dimen10sp</item>
+        <item name="lineHeight">12.1dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.TransactionStatus" parent="SdkTheme">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="fontWeight">700</item>
+        <item name="android:letterSpacing">0.0126</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/monnifyTransactionStatusText</item>
+        <item name="android:textSize">@dimen/dimen16sp</item>
+        <item name="lineHeight">19.36dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.TransactionStatusMessage" parent="SdkTheme">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:letterSpacing">0.0126</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/monnifyTransactionStatusText</item>
+        <item name="android:textSize">@dimen/dimen12sp</item>
+        <item name="lineHeight">16.56dp</item>
+    </style>
+
+    <style name="Monnify.TextAppearance.TooltipText" parent="SdkTheme">
+        <item name="android:textColor">@color/monnifyWhite</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">@dimen/dimen9sp</item>
+        <item name="lineHeight">10dp</item>
+    </style>
+</resources>

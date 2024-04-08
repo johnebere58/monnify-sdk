@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinnerGroupLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_input"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingHorizontal="@dimen/dimen15dp"
+    android:paddingVertical="@dimen/dimen8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/spinnerLabelText"
+        style="@style/Monnify.TextAppearance.Input.Dropdown.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="Select Bank" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen5dp"
+        android:background="@null"
+        android:gravity="start"
+        tools:listitem="@layout/plugin_monnify_dropdown_selected_item_view"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@id/spinnerLabelText" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="14dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chevron_down"
+        android:layout_marginRight="8dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

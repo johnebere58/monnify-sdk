@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/monnifyPaymentHeaderBackground"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen40dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/transactionStatusIcon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/ic_transaction_status_success" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/transactionStatusTextView"
+            style="@style/Monnify.TextAppearance.TransactionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/transaction_status"
+            tools:text="@string/transaction_status" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen8dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/transactionStatusMessageTextView"
+            style="@style/Monnify.TextAppearance.TransactionStatusMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/transaction_status_message"
+            tools:text="@string/transaction_status_message" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen24dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyTransactionStatusButton
+            android:id="@+id/monnifyTransactionStatusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/returningToMerchantTextView"
+            style="@style/Monnify.TextAppearance.Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:text="@string/returning_to_merchant_in_some_seconds"
+            tools:visibility="visible" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

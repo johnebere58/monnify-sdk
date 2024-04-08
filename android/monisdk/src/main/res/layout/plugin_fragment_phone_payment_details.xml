@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_payment_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen24dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen24dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyErrorTextView
+            android:id="@+id/monnifyErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen16dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Monnify.TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enter_your_phone_number_to_begin_payment"
+            app:fontFamily="@font/inter_bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen16dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyEditText
+            android:id="@+id/monnifyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:monnifyEditTextHintText="@string/enter_phone_number"
+            app:monnifyEditTextLabelText="@string/phone_number"
+            app:monnifyEditTextMaxLength="11" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen28dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_string"
+            app:monnifyButtonState="disabled" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_payattitude" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen16dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen16dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

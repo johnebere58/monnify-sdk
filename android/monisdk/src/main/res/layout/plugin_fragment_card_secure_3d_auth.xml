@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_payment_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dimen24dp">
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24dp" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyErrorTextView
+                android:id="@+id/monnifyErrorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen16dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/otpDescriptionTextView"
+                style="@style/Monnify.TextAppearance.Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/dimen60dp"
+                android:gravity="center"
+                android:text="@string/secure_thread_message"
+                android:textColor="@color/monnifyNeutralBlackTrans50" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <ProgressBar
+            android:id="@+id/webViewProgressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:progress="60"
+            android:progressDrawable="@drawable/bg_progress_drawable"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.teamapt.monnify.sdk.customview.TouchableWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

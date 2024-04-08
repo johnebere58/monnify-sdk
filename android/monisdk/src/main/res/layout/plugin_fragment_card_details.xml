@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_payment_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen24dp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Monnify.TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen27dp"
+            android:gravity="center_horizontal"
+            android:text="@string/enter_your_card_details"
+            android:textAlignment="center"
+            android:textSize="@dimen/dimen14sp"
+            app:fontFamily="@font/inter_bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen16dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyErrorTextView
+            android:id="@+id/monnifyErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen8dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/testCardsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.teamapt.monnify.sdk.customview.MonnifyDropDownView
+                android:id="@+id/testCardsDropDownView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_test_dropdown"
+                app:dropDownListItemView="@layout/plugin_monnify_dropdown_list_item_view"
+                app:dropDownSelectedItemView="@layout/plugin_monnify_dropdown_test_selected_item_view"
+                app:dropDownShowLabel="false" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.teamapt.monnify.sdk.customview.MonnifyCardNumberEditText
+            android:id="@+id/cardNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen16dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyExpiryDateAndCVVInputView
+            android:id="@+id/expiryDateAndCVVInputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/pinEntryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen30dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oxygen_bold"
+                android:gravity="center_horizontal"
+                android:text="@string/please_enter_card_pin_to_authorize_this_payment"
+                android:textAlignment="center"
+                android:textColor="#801A0C2F"
+                android:textSize="@dimen/dimen13sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen15dp" />
+
+            <com.teamapt.monnify.sdk.customview.PinView
+                android:id="@+id/pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:cursorVisible="false"
+                android:inputType="numberPassword"
+                android:itemBackground="@color/monnifyWhite"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingBottom="0dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen14sp"
+                app:monnifyExpandToParentWidth="true"
+                app:monnifyPinViewCursorColor="@color/monnifyVividOrange"
+                app:monnifyPinViewCursorWidth="2dp"
+                app:monnifyPinViewHideLineWhenFilled="false"
+                app:monnifyPinViewItemCount="4"
+                app:monnifyPinViewItemHeight="@dimen/dimen50dp"
+                app:monnifyPinViewItemRadius="4dp"
+                app:monnifyPinViewItemSpacing="0dp"
+                app:monnifyPinViewLineColor="@color/monnifyInputBorderColor"
+                app:monnifyPinViewLineWidth="1dp"
+                app:monnifyPinViewType="rectangle" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen20dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_string"
+            app:monnifyButtonState="disabled"
+            tools:text="Continue" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

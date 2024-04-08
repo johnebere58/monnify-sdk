@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="55dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/payWithCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/payWithSameCardButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_transaction_status_button"
+            android:text="@string/try_again_with_the_same_card"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen12dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/payWithAnotherCardButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_transaction_status_button"
+            android:text="@string/try_again_another_card"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen12dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/payWithTransferLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/payWithTransferButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_transaction_status_button"
+            android:text="@string/try_again_with_transfer"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen12dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/payWithUssdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/payWithUssdButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_transaction_status_button"
+            android:text="@string/try_again_with_ussd"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen12dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/payWithBankLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/payWithBankButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_transaction_status_button"
+            android:text="@string/try_again_with_bank"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen12dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/payWithPhoneNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/payWithPhoneNumberButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_transaction_status_button"
+            android:text="@string/try_again_with_phone_number"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen12dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/payWithOtherMethodsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_transaction_status_button"
+        android:text="@string/pay_with_other_methods"
+        android:textAllCaps="false" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen12dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

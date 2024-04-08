@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/monnifyWhite" />
+    <corners android:radius="@dimen/dimen6dp" />
+    <stroke
+        android:width="@dimen/dimen1dp"
+        android:color="@color/monnifyPaymentMethodBorder" />
+
+</shape>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    app:bl_cornersRadius="@dimen/dimen8dp"
+    app:bl_bubbleColor="@color/monnifyTooltipBackgroundColor"
+    app:bl_arrowDirection="right_center"
+    app:bl_arrowWidth="@dimen/dimen6dp"
+    app:bl_arrowHeight="@dimen/dimen12dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen8dp"
+        android:paddingTop="@dimen/dimen4dp"
+        tools:background="@color/monnifyTooltipBackgroundColor">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/monnifyTooltipInstruction"
+            style="@style/Monnify.TextAppearance.TooltipText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_cvv_is_the_3_digit_number_on_the_back_of_your_card" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen8dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_card_cvv" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.daasuu.bl.BubbleLayout>

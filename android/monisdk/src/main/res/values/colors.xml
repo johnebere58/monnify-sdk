@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003043</color>
+    <color name="colorPrimaryDark">#002331</color>
+    <color name="colorAccent">#0A0A0A</color>
+
+    <color name="monnifyOrange">#FBA019</color>
+
+    <color name="lightGray">#43979797</color>
+    <color name="unclearWhite">#F7FCFF</color>
+
+    <color name="monnifyRedColor">#EB5757</color>
+
+    <color name="monnifyTransparent">#FFFFFFFF</color>
+    <color name="monnifyWhite">#FFFFFF</color>
+    <color name="monnifyBlack">#30424C</color>
+    <color name="monnifyGray">#BDBDBD</color>
+    <color name="monnifyLineColor">#1A000000</color>
+
+    <color name="inputTextColorBlack">#4A4A4A</color>
+    <color name="popUpBackgroundColor">#F7F7F7</color>
+
+    <color name="monnifyInputHintColor">#4A4A4A4A</color>
+    <color name="monnifyLightBlue">#00B8C2</color>
+
+    <color name="deepGray">#BDBDBD</color>
+
+
+    <!--  Colors  -->
+
+    <color name="monnifyActivityBackground">#E6353535</color>
+    <color name="monnifyIndicatorColor">#FF0098A0</color>
+    <color name="monnifyIndicatorTrackColor">#E0E0E0</color>
+    <color name="monnifySmallIndicatorTrackColor">#FFC4C4C4</color>
+    <color name="monnifyIndicatorTrackPatternColor">#7E8B92</color>
+    <color name="monnifyNotchColor">#FF005461</color>
+    <color name="monnifySeeThroughBackground">#F2FFFFFF</color>
+    <color name="monnifyDarkGreen">#FF063A4F</color>
+    <color name="monnifyRoyalBlue">#FF00B8C2</color>
+    <color name="monnifyRoyalGold">#ECAB03</color>
+    <color name="monnifyVividOrange">#FFFA9F17</color>
+    <color name="monnifyTitleText">#FF1A0C2F</color>
+    <color name="monnifyTitleTextTrans70">#B31A0C2F</color>
+    <color name="monnifyBackground">#FFF9FBFD</color>
+    <color name="monnifyBackgroundSym">#FFDBF5F6</color>
+    <color name="monnifyInfoTitleText">#FFB4CBD5</color>
+    <color name="monnifyInfoDetailsText">#FF333333</color>
+    <color name="monnifyTransferInfoDetailsText">#99063A4F</color>
+    <color name="monnifyUssdCodeBackground">#66DBF5F6</color>
+    <color name="monnifyUssdCode">#FFDBF5F6</color>
+    <color name="monnifyDisableGrey">#FFE0E0E0</color>
+    <color name="monnifyPrimaryButtonText">#FFFFFFFF</color>
+    <color name="monnifyIconGrey">#FF9BA6B9</color>
+    <color name="monnifyRed">#FFE94444</color>
+    <color name="monnifyErrorBackground">#FFFEF6F6</color>
+    <color name="monnifyWarningBackground">#0DECAB03</color>
+    <color name="monnifyInputTextColorBlack">#FF4A4A4A</color>
+    <color name="monnifyInputBorderColor">#40979797</color>
+    <color name="monnifyLoadingText">#4F4F4F</color>
+    <color name="monnifySurfaceText">#FFFFFFFF</color>
+    <color name="monnifyBackgroundText">#FF000000</color>
+    <color name="monnifyAmountLabel">#99FFFFFF</color>
+    <color name="monnifyFeeBackground">#FF016C80</color>
+    <color name="monnifyNeutralBlackTrans100">#FF000000</color>
+    <color name="monnifyNeutralBlackTrans40">#66000000</color>
+    <color name="monnifyNeutralBlackTrans50">#80000000</color>
+    <color name="monnifyNeutralBlackTrans30">#4D000000</color>
+    <color name="monnifyPaymentHeaderBackground">#F5FAFD</color>
+    <color name="monnifyPaymentIconBackground">#0D00B8C2</color>
+    <color name="monnifyDotIndicatorColor">#8000B8C2</color>
+    <color name="monnifyAmountAndFeeText">#FF719799</color>
+    <color name="monnifyMerchantHeaderContentDivider">#3015899E</color>
+    <color name="monnifyPaymentMethodBorder">#FFEFF4F7</color>
+    <color name="monnifySecondaryGrey">#9BA6B9</color>
+    <color name="monnifySecondaryGreyTrans5">#0DB4CBD5</color>
+    <color name="monnifySecondaryGreyTrans40">#66B4CBD5</color>
+    <color name="monnifySecondaryGreyTrans70">#B3B4CBD5</color>
+    <color name="monnifyTestIndicator">#1AFA9F17</color>
+    <color name="monnifyTestIndicatorBorder">#0DFA9F17</color>
+    <color name="monnifyTestIndicatorText">#FA9F17</color>
+    <color name="monnifyStateSuccessTrans10">#1A1EB12D</color>
+    <color name="monnifyStateSuccess">#FF1EB12D</color>
+    <color name="monnifyTransactionStatusText">#FF434343</color>
+    <color name="monnifyTooltipBackgroundColor">#FF273142</color>
+</resources>

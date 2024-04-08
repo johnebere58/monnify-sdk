@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/monnifyBackground"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleTextView"
+            style="@style/Monnify.TextAppearance.SelectPaymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen24dp"
+            android:layout_marginLeft="@dimen/dimen24dp"
+            android:layout_marginTop="@dimen/dimen20dp"
+            android:layout_marginBottom="@dimen/dimen12dp"
+            android:text="@string/select_payment_method" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyPaymentMethodHeaderView
+            android:id="@+id/monnifyPaymentMethodHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen12dp"
+            android:background="@android:color/transparent"
+            app:paymentMethodHorizontalMargin="@dimen/dimen12dp"
+            app:paymentMethodButtonText="Hide" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen8dp" />
+
+        <com.teamapt.monnify.sdk.customview.NonScrollListView
+            android:id="@+id/paymentMethodListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen24dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/dimen8dp"
+            android:listSelector="@android:color/transparent"
+            tools:listitem="@layout/plugin_payment_method_list_item" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

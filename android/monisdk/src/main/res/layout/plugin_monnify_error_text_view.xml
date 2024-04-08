@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_error"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="@dimen/dimen14dp"
+    android:paddingVertical="@dimen/dimen8dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/infoIcon"
+        android:layout_width="@dimen/dimen24dp"
+        android:layout_height="@dimen/dimen24dp"
+        app:srcCompat="@drawable/ic_error_info" />
+
+    <Space
+        android:layout_width="@dimen/dimen10dp"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/errorMessageTextView"
+        style="@style/Monnify.TextAppearance.ErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:layout_weight="1"
+        android:textStyle=""
+        tools:text="Payment was not found, please transfer to the account number below" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/close"
+        android:layout_width="@dimen/dimen24dp"
+        android:layout_height="@dimen/dimen24dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:tint="@color/monnifyRed"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_close" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

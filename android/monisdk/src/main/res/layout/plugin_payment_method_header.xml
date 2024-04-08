@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/paymentMethodHeaderLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_payment_method_header"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/paymentMethodHeaderIconImageView"
+            android:layout_width="@dimen/dimen36dp"
+            android:layout_height="@dimen/dimen34dp"
+            android:layout_marginVertical="@dimen/dimen12dp"
+            android:layout_marginStart="@dimen/dimen24dp"
+            android:layout_marginLeft="@dimen/dimen24dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_payment_method_icon"
+            android:padding="@dimen/dimen8dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/paymentMethodHeaderTitleTextView"
+            style="@style/Monnify.TextAppearance.PaymentMethodHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen12dp"
+            android:layout_marginLeft="@dimen/dimen12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="@id/paymentMethodHeaderIconImageView"
+            app:layout_constraintStart_toEndOf="@id/paymentMethodHeaderIconImageView"
+            app:layout_constraintTop_toTopOf="@id/paymentMethodHeaderIconImageView"
+            tools:text="Payment Method Name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/paymentMethodHeaderChangeMethodTextView"
+            style="@style/Monnify.TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen24dp"
+            android:layout_marginEnd="@dimen/dimen24dp"
+            android:text="@string/change"
+            android:textColor="@color/monnifyRoyalBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

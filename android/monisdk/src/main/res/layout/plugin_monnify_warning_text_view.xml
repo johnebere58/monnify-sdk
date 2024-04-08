@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_warning"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:paddingHorizontal="@dimen/dimen14dp"
+    android:paddingVertical="@dimen/dimen8dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/warningMessageTextView"
+        style="@style/Monnify.TextAppearance.WarningText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:gravity="center"
+        android:textAlignment="center"
+        tools:text="@string/please_do_not_save_this_account_number" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

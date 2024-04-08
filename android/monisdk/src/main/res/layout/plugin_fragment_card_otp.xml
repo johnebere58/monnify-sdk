@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_payment_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen24dp">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen24dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyErrorTextView
+            android:id="@+id/monnifyErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen16dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_otp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen12dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Monnify.TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enter_otp"
+            app:fontFamily="@font/inter_bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen5dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/otpDescriptionTextView"
+            style="@style/Monnify.TextAppearance.Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/an_otp_has_been_sent_to_your_phone_number_enter_it_to_complete_this_payment"
+            android:textColor="@color/monnifyNeutralBlackTrans50" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen24dp" />
+
+
+        <com.teamapt.monnify.sdk.customview.MonnifyEditText
+            android:id="@+id/otpEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:monnifyEditTextHintText="@string/enter_otp"
+            app:monnifyEditTextLabelText="@string/otp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen20dp" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_string"
+            app:monnifyButtonState="disabled" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goBackButton"
+            style="@style/Monnify.TextAppearance.TextButton.GoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_text"
+            android:clickable="true"
+            android:drawablePadding="@dimen/dimen8dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/go_back"
+            android:textAlignment="center"
+            android:textStyle="normal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

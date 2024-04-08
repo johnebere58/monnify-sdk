@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BumpedTopLayout">
+        <attr name="monnifyBumpIcon" format="reference" />
+        <attr name="monnifyIconRadius" format="dimension" />
+        <attr name="monnifyIconPadding" format="dimension" />
+        <attr name="monnifyCornerRadius" format="dimension" />
+        <attr name="monnifyBumpLapRadius" format="dimension" />
+        <attr name="monnifyBorderSize" format="dimension" />
+        <attr name="monnifyBorderColor" format="color" />
+        <attr name="monnifyAllowIconBorder" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedOrangeGradientButton">
+        <attr name="android:text" />
+        <attr name="android:enabled" />
+    </declare-styleable>
+
+    <declare-styleable name="fonts">
+        <attr name="android:textStyle" />
+        <attr name="fontFamily" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressBar">
+        <attr name="monnifyMax" format="integer" />
+        <attr name="monnifyBackgroundColor" format="color" />
+        <attr name="monnifyProgressColor" format="color" />
+        <attr name="monnifyBackgroundStrokeWidth" format="dimension" />
+        <attr name="monnifyProgressStrokeWidth" format="dimension" />
+        <attr name="monnifyDiameter" format="dimension" />
+        <attr name="monnifyShowText" format="boolean" />
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="android:layout_margin" />
+    </declare-styleable>
+
+    <declare-styleable name="PinViewTheme">
+        <attr name="monnifyPinViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="monnifyPinViewItemCount" format="integer" />
+        <attr name="monnifyPinViewMaxItemCount" format="integer" />
+        <attr name="monnifyPinViewIsExtensible" format="boolean" />
+        <attr name="monnifyPinViewItemWidth" format="dimension" />
+        <attr name="monnifyPinViewItemHeight" format="dimension" />
+        <attr name="monnifyPinViewItemRadius" format="dimension" />
+        <attr name="monnifyPinViewItemSpacing" format="dimension" />
+        <attr name="monnifyPinViewLineWidth" format="dimension" />
+        <attr name="monnifyPinViewLineColor" format="reference|color" />
+        <attr name="monnifyPinViewType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="android:cursorVisible" />
+        <attr name="monnifyPinViewCursorWidth" format="dimension" />
+        <attr name="monnifyPinViewCursorColor" format="reference|color" />
+        <attr name="android:itemBackground" />
+        <attr name="monnifyPinViewHideLineWhenFilled" format="boolean" />
+
+        <!--   Attrs     -->
+        <attr name="monnifyExpandToParentWidth" format="boolean" />
+    </declare-styleable>
+
+    <!--  Attrs  -->
+
+
+    <declare-styleable name="MonnifyProcessingIndicatorView">
+
+
+        <attr name="processingIndicatorStrokeColor" format="color" />
+        <attr name="processingIndicatorStrokeWidth" format="dimension" />
+        <attr name="processingIndicatorSize" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="MonnifyProgressBar">
+
+        <attr name="indicatorType" format="enum">
+            <enum name="small" value="0" />
+            <enum name="large" value="1" />
+        </attr>
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="indicatorText" format="string" />
+        <attr name="indicatorShowText" format="boolean" />
+        <attr name="indicatorTextSize" format="dimension" />
+        <attr name="indicatorTextColor" format="dimension" />
+        <attr name="indicatorColor" format="color" />
+        <attr name="indicatorTrackColor" format="color" />
+        <attr name="indicatorTrackPattern" format="reference" />
+        <attr name="indicatorCornerRadius" format="dimension" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MonnifyHeaderView">
+
+        <attr name="headerViewCornerRadius" format="dimension" />
+        <attr name="headerViewGapSize" format="dimension" />
+        <attr name="headerViewLabelText" format="string" />
+        <attr name="headerViewLabelTextSize" format="dimension" />
+        <attr name="headerViewLabelTextColor" format="color" />
+        <attr name="headerViewAmountText" format="string" />
+        <attr name="headerViewAmountTextSize" format="dimension" />
+        <attr name="headerViewAmountTextColor" format="color" />
+        <attr name="headerViewBackground" format="reference" />
+        <attr name="headerViewOverlay" format="reference" />
+        <attr name="headerViewNotchColor" format="color" />
+        <attr name="headerViewNotchWidth" format="dimension" />
+
+        <attr name="headerViewActionBarUsernameText" format="string" />
+        <attr name="headerViewActionBarCancelText" format="string" />
+        <attr name="headerViewActionBarCancelIcon" format="string" />
+        <attr name="headerViewActionBarCancelIconSize" format="dimension" />
+        <attr name="headerViewActionBarTextSize" format="dimension" />
+        <attr name="headerViewActionBarTextColor" format="color" />
+        <attr name="headerViewActionBarTopPadding" format="dimension" />
+        <attr name="headerViewActionBarBottomPadding" format="dimension" />
+        <attr name="headerViewActionBarStartPadding" format="dimension" />
+        <attr name="headerViewActionBarEndPadding" format="dimension" />
+
+        <attr name="headerViewMerchantLogoRadius" format="dimension" />
+        <attr name="headerViewMerchantLogoBorderWidth" format="dimension" />
+        <attr name="headerViewMerchantLogoBackground" format="reference" />
+        <attr name="headerViewMerchantLogoBorderColor" format="color" />
+
+        <attr name="headerViewMerchantNameText" format="string" />
+        <attr name="headerViewMerchantNameTextSize" format="dimension" />
+        <attr name="headerViewMerchantNameTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MonnifyAmountPatternView">
+
+        <attr name="monnifyAmountPatternCornerRadius" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MonnifyRoundedOrangeGradientButton">
+
+        <attr name="android:text" />
+        <attr name="monnifyButtonState" format="enum">
+            <enum name="disabled" value="0" />
+            <enum name="enabled" value="1" />
+            <enum name="loading" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MonnifyPaymentMethodHeaderView">
+
+        <attr name="paymentMethodTitle" format="string" />
+        <attr name="paymentMethodIcon" format="reference" />
+        <attr name="paymentMethodButtonText" format="string" />
+        <attr name="paymentMethodHorizontalMargin" format="dimension" />
+        <attr name="android:background" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MonnifyMerchantHeader">
+
+        <attr name="headerCornerRadius" format="dimension" />
+        <attr name="headerGapSize" format="dimension" />
+        <attr name="headerTopPadding" format="dimension" />
+        <attr name="headerBottomPadding" format="dimension" />
+        <attr name="headerStartPadding" format="dimension" />
+        <attr name="headerEndPadding" format="dimension" />
+
+        <attr name="headerTotalAmountLabelText" format="string" />
+        <attr name="headerTotalAmountLabelTextSize" format="dimension" />
+        <attr name="headerTotalAmountLabelTextColor" format="color" />
+
+        <attr name="headerTotalAmountText" format="string" />
+        <attr name="headerTotalAmountTextSize" format="dimension" />
+        <attr name="headerTotalAmountTextColor" format="color" />
+
+        <attr name="headerAmountText" format="string" />
+        <attr name="headerAmountLabelText" format="string" />
+        <attr name="headerFeeText" format="string" />
+        <attr name="headerFeeLayoutText" format="string" />
+        <attr name="headerAmountAndFeeTextSize" format="dimension" />
+        <attr name="headerAmountAndFeeTextColor" format="color" />
+
+        <attr name="headerContentBackgroundColor" format="color" />
+        <attr name="headerContentBackgroundCornerRadius" format="dimension" />
+        <attr name="headerContentTopPadding" format="dimension" />
+        <attr name="headerContentBottomPadding" format="dimension" />
+        <attr name="headerContentStartPadding" format="dimension" />
+        <attr name="headerContentEndPadding" format="dimension" />
+
+        <attr name="headerBackground" format="reference" />
+
+        <attr name="headerActionBarCancelText" format="string" />
+        <attr name="headerActionBarCancelIcon" format="string" />
+        <attr name="headerActionBarCancelIconSize" format="dimension" />
+        <attr name="headerActionBarTextSize" format="dimension" />
+        <attr name="headerActionBarTextColor" format="color" />
+        <attr name="headerActionBarTopPadding" format="dimension" />
+        <attr name="headerActionBarBottomPadding" format="dimension" />
+        <attr name="headerActionBarStartPadding" format="dimension" />
+        <attr name="headerActionBarEndPadding" format="dimension" />
+
+        <attr name="headerMerchantLogoRadius" format="dimension" />
+        <attr name="headerMerchantLogoBorderWidth" format="dimension" />
+        <attr name="headerMerchantLogoBackground" format="reference" />
+        <attr name="headerMerchantLogoBorderColor" format="color" />
+
+        <attr name="headerEmailAddressText" format="string" />
+        <attr name="headerEmailAddressTextColor" format="color" />
+        <attr name="headerEmailAddressTextSize" format="dimension" />
+
+        <attr name="headerMerchantNameText" format="string" />
+        <attr name="headerMerchantNameTextSize" format="dimension" />
+        <attr name="headerMerchantNameTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MonnifyLetterSpacingTextView">
+
+        <attr name="android:text" />
+        <attr name="android:letterSpacing" />
+    </declare-styleable>
+
+    <declare-styleable name="MonnifyDropDownView">
+
+        <attr name="android:background" />
+        <attr name="dropDownListItemView" format="reference" />
+        <attr name="dropDownSelectedItemView" format="reference" />
+        <attr name="dropDownShowLabel" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MonnifyEditText">
+        <attr name="monnifyEditTextClickable" format="boolean" />
+        <attr name="monnifyEditTextLabelText" format="string" />
+        <attr name="monnifyEditTextHintText" format="string" />
+        <attr name="monnifyEditTextIcon" format="reference" />
+        <attr name="monnifyEditTextMaxLength" format="integer" />
+        <attr name="monnifyEditTextLiveValidation" format="boolean" />
+        <attr name="monnifyEditTextErrorMessage" format="boolean" />
+        <attr name="monnifyEditTextShowError" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MonnifyNewtonCradleIndicator">
+
+        <attr name="cradleDotColor" format="color" />
+        <attr name="cradleDotRadius" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/monnifyFeeBackground">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dimen24dp"
+        android:paddingVertical="@dimen/dimen10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Monnify.TextAppearance.Fee.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/amount" />
+
+        <Space
+            android:layout_width="@dimen/dimen4dp"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/feeBarAmountTextView"
+            style="@style/Monnify.TextAppearance.Fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textStyle="bold"
+            tools:text="@string/placeholder_amount" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Monnify.TextAppearance.Fee.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/fee" />
+
+        <Space
+            android:layout_width="@dimen/dimen4dp"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/feeBarFeeTextView"
+            style="@style/Monnify.TextAppearance.Fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textStyle="bold"
+            tools:text="@string/placeholder_amount" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

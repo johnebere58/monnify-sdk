@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/monnifyBackground"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <com.teamapt.monnify.sdk.customview.MonnifyPaymentMethodHeaderView
+            android:id="@+id/monnifyPaymentMethodHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:paymentMethodIcon="@drawable/ic_pay_with_transfer"
+            app:paymentMethodTitle="@string/pay_with_transfer" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_payment_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dimen24dp">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24dp" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyErrorTextView
+                android:id="@+id/monnifyErrorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Monnify.TextAppearance.Title.TransferCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/pay_with_transfer_info"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyWarningTextView
+                android:id="@+id/monnifyWarningTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen16dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_account_details"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/dimen16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Monnify.TextAppearance.ItemTile.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/account_number" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.teamapt.monnify.sdk.customview.MonnifyLetterSpacingTextView
+                        android:id="@+id/accountNumberTextView"
+                        style="@style/Monnify.TextAppearance.ItemTile.AccountNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:drawablePadding="@dimen/dimen6dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="0011357718" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/accountNumberCopyIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dimen8dp"
+                        android:paddingLeft="@dimen/dimen8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/accountNumberTextView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_copy" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/accountNumberCopiedTextView"
+                        style="@style/Monnify.TextAppearance.USSDCode.Subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dimen8dp"
+                        android:paddingLeft="@dimen/dimen8dp"
+                        android:text="@string/copied"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/accountNumberTextView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@string/copied"
+                        tools:visibility="visible" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen2dp" />
+
+                <com.teamapt.monnify.sdk.customview.MonnifyLetterSpacingTextView
+                    android:id="@+id/bankNameTextView"
+                    style="@style/Monnify.TextAppearance.ItemTile.BankName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAllCaps="true"
+                    tools:text="STERLING BANK" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen8dp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dimen30dp"
+                    android:layout_height="@dimen/dimen1dp"
+                    android:layout_gravity="center_horizontal"
+                    app:dividerColor="@color/monnifySecondaryGreyTrans70" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen8dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Monnify.TextAppearance.ItemTile.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/account_name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/merchantNameTextView"
+                    style="@style/Monnify.TextAppearance.ItemTile.Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    tools:text="WaschePoint Limited" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen24dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/dimen65dp">
+
+                    <com.teamapt.monnify.sdk.customview.MonnifyProgressBar
+                        android:id="@+id/transactionCountdownProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:indicatorType="small" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen4dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/getBankUSSDCode"
+                style="@style/Monnify.TextAppearance.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/get_bank_ussd_code"
+                android:textAlignment="center"
+                android:textStyle="normal" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/bankUSSDCodeDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen16dp" />
+
+                <com.teamapt.monnify.sdk.customview.MonnifyDropDownView
+                    android:id="@+id/banksDropDownView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen16dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/dialCodeGroupLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/Monnify.TextAppearance.USSDCode.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dail_the_code" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen8dp" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/tapToCopyLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_ussd_code">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/shortCodeTextView"
+                            style="@style/Monnify.TextAppearance.USSDCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/dimen16dp"
+                            android:layout_marginVertical="@dimen/dimen8dp"
+                            tools:text="*909*0011357718*0340#" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen8dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/clickToCopyCodeTextView"
+                        style="@style/Monnify.TextAppearance.USSDCode.Subtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/click_to_copy_code" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen12dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen4dp" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#1A000000" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen16dp" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
+                android:id="@+id/continueButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transferred_money"
+                app:monnifyButtonState="enabled" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
