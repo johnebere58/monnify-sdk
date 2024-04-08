@@ -3,19 +3,18 @@ package com.monnify.monnify_payment_sdk
 import android.app.Activity
 import android.content.Intent
 import androidx.annotation.NonNull
-import com.teamapt.monnify.sdk.Monnify
-import com.teamapt.monnify.sdk.MonnifyTransactionResponse
-import com.teamapt.monnify.sdk.data.model.TransactionDetails
-import com.teamapt.monnify.sdk.model.PaymentMethod
-import com.teamapt.monnify.sdk.rest.data.request.SubAccountDetails
-import com.teamapt.monnify.sdk.service.ApplicationMode
+import com.monnify.monnify_payment_sdk.Monnify
+import com.monnify.monnify_payment_sdk.MonnifyTransactionResponse
+import com.monnify.monnify_payment_sdk.data.model.TransactionDetails
+import com.monnify.monnify_payment_sdk.model.PaymentMethod
+import com.monnify.monnify_payment_sdk.rest.data.request.SubAccountDetails
+import com.monnify.monnify_payment_sdk.service.ApplicationMode
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
-import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
 import java.math.BigDecimal
 

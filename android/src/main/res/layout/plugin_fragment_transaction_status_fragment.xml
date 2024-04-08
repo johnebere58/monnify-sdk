@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen24dp" />
 
-        <com.teamapt.monnify.sdk.customview.MonnifyTransactionStatusButton
+        <com.monnify.monnify_payment_sdk.customview.MonnifyTransactionStatusButton
             android:id="@+id/monnifyTransactionStatusButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -78,7 +78,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+        <com.monnify.monnify_payment_sdk.customview.MonnifyBrandContainer
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen16dp" />
 
-        <com.teamapt.monnify.sdk.customview.MonnifyErrorTextView
+        <com.monnify.monnify_payment_sdk.customview.MonnifyErrorTextView
             android:id="@+id/monnifyErrorTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:visibility="gone"
             tools:visibility="visible">
 
-            <com.teamapt.monnify.sdk.customview.MonnifyDropDownView
+            <com.monnify.monnify_payment_sdk.customview.MonnifyDropDownView
                 android:id="@+id/testCardsDropDownView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
-        <com.teamapt.monnify.sdk.customview.MonnifyCardNumberEditText
+        <com.monnify.monnify_payment_sdk.customview.MonnifyCardNumberEditText
             android:id="@+id/cardNumberEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -75,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen16dp" />
 
-        <com.teamapt.monnify.sdk.customview.MonnifyExpiryDateAndCVVInputView
+        <com.monnify.monnify_payment_sdk.customview.MonnifyExpiryDateAndCVVInputView
             android:id="@+id/expiryDateAndCVVInputView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/dimen15dp" />
 
-            <com.teamapt.monnify.sdk.customview.PinView
+            <com.monnify.monnify_payment_sdk.customview.PinView
                 android:id="@+id/pinView"
                 style="@style/PinWidget.PinView"
                 android:layout_width="match_parent"
@@ -142,7 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen20dp" />
 
-        <com.teamapt.monnify.sdk.customview.MonnifyRoundedOrangeGradientButton
+        <com.monnify.monnify_payment_sdk.customview.MonnifyRoundedOrangeGradientButton
             android:id="@+id/continueButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,7 +155,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+        <com.monnify.monnify_payment_sdk.customview.MonnifyBrandContainer
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

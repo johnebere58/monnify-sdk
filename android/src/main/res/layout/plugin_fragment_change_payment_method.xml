@@ -24,7 +24,7 @@
             android:layout_marginBottom="@dimen/dimen12dp"
             android:text="@string/select_payment_method" />
 
-        <com.teamapt.monnify.sdk.customview.MonnifyPaymentMethodHeaderView
+        <com.monnify.monnify_payment_sdk.customview.MonnifyPaymentMethodHeaderView
             android:id="@+id/monnifyPaymentMethodHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen8dp" />
 
-        <com.teamapt.monnify.sdk.customview.NonScrollListView
+        <com.monnify.monnify_payment_sdk.customview.NonScrollListView
             android:id="@+id/paymentMethodListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <com.teamapt.monnify.sdk.customview.MonnifyBrandContainer
+        <com.monnify.monnify_payment_sdk.customview.MonnifyBrandContainer
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

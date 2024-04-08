@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".module.view.activity.SdkActivity">
 
-    <com.teamapt.monnify.sdk.customview.MonnifyMerchantHeader
+    <com.monnify.monnify_payment_sdk.customview.MonnifyMerchantHeader
         android:id="@+id/monnifyHeaderView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.teamapt.monnify.sdk.customview.MonnifyTestIndicatorView
+    <com.monnify.monnify_payment_sdk.customview.MonnifyTestIndicatorView
         android:id="@+id/monnifyTestIndicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
 
         </androidx.core.widget.NestedScrollView>
 
-        <com.teamapt.monnify.sdk.customview.MonnifyLoadingIndicatorView
+        <com.monnify.monnify_payment_sdk.customview.MonnifyLoadingIndicatorView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:visibility="gone"
