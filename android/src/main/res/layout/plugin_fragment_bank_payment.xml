@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
 
-    <com.monnify.monnify_payment_sdk.customview.MonnifyPaymentMethodHeaderView
+    <com.teamapt.monnify.monnify_payment_sdk.customview.MonnifyPaymentMethodHeaderView
         android:id="@+id/monnifyPaymentMethodHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

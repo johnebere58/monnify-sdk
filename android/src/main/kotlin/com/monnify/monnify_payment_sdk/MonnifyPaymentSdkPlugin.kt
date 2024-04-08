@@ -3,18 +3,19 @@ package com.monnify.monnify_payment_sdk
 import android.app.Activity
 import android.content.Intent
 import androidx.annotation.NonNull
-import com.monnify.monnify_payment_sdk.Monnify
-import com.monnify.monnify_payment_sdk.MonnifyTransactionResponse
-import com.monnify.monnify_payment_sdk.data.model.TransactionDetails
-import com.monnify.monnify_payment_sdk.model.PaymentMethod
-import com.monnify.monnify_payment_sdk.rest.data.request.SubAccountDetails
-import com.monnify.monnify_payment_sdk.service.ApplicationMode
+import com.teamapt.monnify.monnify_payment_sdk.Monnify
+import com.teamapt.monnify.monnify_payment_sdk.MonnifyTransactionResponse
+import com.teamapt.monnify.monnify_payment_sdk.data.model.TransactionDetails
+import com.teamapt.monnify.monnify_payment_sdk.model.PaymentMethod
+import com.teamapt.monnify.monnify_payment_sdk.rest.data.request.SubAccountDetails
+import com.teamapt.monnify.monnify_payment_sdk.service.ApplicationMode
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
+import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
 import java.math.BigDecimal
 
@@ -52,7 +53,7 @@ class MonnifyPaymentSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
         channel.setMethodCallHandler(this)
     }
 
-    override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result<Any>) {
+    override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
         when (call.method) {
 
             "initialize" -> {
@@ -69,7 +70,7 @@ class MonnifyPaymentSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
         }
     }
 
-    private fun initialize(call: MethodCall, result: Result<Any>) {
+    private fun initialize(call: MethodCall, result: Result) {
 
         if (call.arguments == null || call.arguments !is Map<*, *>) {
             result.error(ERROR_CODE_SDK_INITIALIZATION, "Invalid input(s)", null)
@@ -92,7 +93,7 @@ class MonnifyPaymentSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
         result.success(true)
     }
 
-    private fun initializePayment(call: MethodCall, result: Result<Any>) {
+    private fun initializePayment(call: MethodCall, result: Result) {
 
         if (call.arguments == null || call.arguments !is Map<*, *>) {
             result.error(ERROR_CODE_PAYMENT_INITIALIZATION, "Invalid input(s)", null)
@@ -197,9 +198,9 @@ class MonnifyPaymentSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware 
 
     class ResultListener : PluginRegistry.ActivityResultListener {
 
-        private lateinit var result: Any
+        private lateinit var result: Result
 
-        fun setResultCallback(result: Result<Any>) {
+        fun setResultCallback(result: Result) {
             this.result = result
         }
 

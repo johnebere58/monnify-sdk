@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen24dp" />
 
-        <com.monnify.monnify_payment_sdk.customview.MonnifyErrorTextView
+        <com.teamapt.monnify.monnify_payment_sdk.customview.MonnifyErrorTextView
             android:id="@+id/monnifyErrorTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:visibility="gone"
             tools:visibility="visible" />
 
-        <com.monnify.monnify_payment_sdk.customview.MonnifyLetterSpacingTextView
+        <com.teamapt.monnify.monnify_payment_sdk.customview.MonnifyLetterSpacingTextView
             android:id="@+id/monnifyUssdBankName"
             style="@style/Monnify.TextAppearance.ItemTile.BankName"
             android:layout_width="wrap_content"
@@ -115,7 +115,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen16dp" />
 
-        <com.monnify.monnify_payment_sdk.customview.MonnifyRoundedOrangeGradientButton
+        <com.teamapt.monnify.monnify_payment_sdk.customview.MonnifyRoundedOrangeGradientButton
             android:id="@+id/continueButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <com.monnify.monnify_payment_sdk.customview.MonnifyBrandContainer
+        <com.teamapt.monnify.monnify_payment_sdk.customview.MonnifyBrandContainer
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

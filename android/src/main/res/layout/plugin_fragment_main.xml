@@ -21,7 +21,7 @@
             android:layout_marginBottom="@dimen/dimen12dp"
             android:text="@string/select_payment_method" />
 
-        <com.monnify.monnify_payment_sdk.customview.NonScrollListView
+        <com.teamapt.monnify.monnify_payment_sdk.customview.NonScrollListView
             android:id="@+id/paymentMethodListView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <com.monnify.monnify_payment_sdk.customview.MonnifyBrandContainer
+        <com.teamapt.monnify.monnify_payment_sdk.customview.MonnifyBrandContainer
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
